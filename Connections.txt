@@ -1,0 +1,13 @@
+MPU 6050 Accelerometer module (i2c)
+	scl - gpio22
+	sda - gpio21
+
+NEO-6M GPS module (uart)
+	RX - gpio17
+	TX - gpio16
+
+SD Card module (spi)
+	CS - gpio2
+	MOSI - gpio23
+	SCK - gpio18
+	MISO - gpio19
