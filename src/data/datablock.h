@@ -29,7 +29,7 @@ struct datablock
   char altitude_format;
 };
 
-// show() function not ultimately needed
+// show() functions not ultimately needed
 void show(datablock &d)
 {
   for (int i = 0; i<TIMESERIES_LENGTH; i++)
@@ -50,4 +50,16 @@ void show(datablock &d)
   Serial.print(d.longitude_degrees); Serial.print("*"); Serial.print(d.longitude_minutes); Serial.print("'"); Serial.print(d.longitude_format); Serial.print("\n");
   Serial.print("Altitude... ");
   Serial.print(d.altitude); Serial.print(d.altitude_format); Serial.print("\n\n");
+}
+
+void showaccel(datablock &d)
+{
+  for (int i = 0; i<TIMESERIES_LENGTH; i++)
+  {
+    for (int j = 0; j<TIMESERIES_WIDTH; j++)
+    {
+      Serial.print(d.acceldata.readings[i][j]); Serial.print(' ');
+    }
+    Serial.print('\n');
+  }
 }
