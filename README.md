@@ -1,6 +1,6 @@
 # vibration-logger
 This is an ESP32-based acceleration and GPS datalogger.
-It records accelerometer data at 100 samples per second in geo-tagged 3-second-chunks, into a binary file on an SD card.
+It records accelerometer data at 100 samples per second in geo-tagged 3-second chunks, into a binary file on an SD card.
 It is intended for use on automobiles during long road trips.
 It allows the user to collect data on road condition and to deduce the time and place of shock damage to sensitive cargo.
 
